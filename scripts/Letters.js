@@ -11,15 +11,13 @@ mainContainer.addEventListener("click", clickEvent => {
         const userAuthor = document.querySelector("select[class='authors']").value
         const userLetter = document.querySelector("textarea[name='letter']").value
         const userRecipient = document.querySelector("select[class='recipients']").value
-        const userTopic = document.querySelector("input[name='topic']").value
-       /*
-        let userTopics = document.querySelector("ul[class='userTopic']")
-       const userTopicArray = []
-       let checkedTopics = userTopics.querySelectorAll("input[name='topic']:checked")
+        //const userTopic = document.querySelector("input[name='topic']").value
+       let userTopicArray = []
+       let checkedTopics = document.querySelectorAll("input[name='topic']:checked")
        checkedTopics.forEach((topic) => {
-        userTopicArray.push(parseInt(topic.value))
+        userTopicArray.push(topic.value)
        })
-       */
+       
                 
        
         // Make an object out of the user input
@@ -27,7 +25,7 @@ mainContainer.addEventListener("click", clickEvent => {
             author: userAuthor,
             letter: userLetter,
             recipient: userRecipient,
-            topic: userTopic,
+            topic: userTopicArray,
             date: new Date()
         }
 

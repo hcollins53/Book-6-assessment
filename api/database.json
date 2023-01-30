@@ -2,10 +2,13 @@
   "lettersToSend": [
     {
       "author": "1",
-      "letter": " Helloo how are you",
-      "recipient": "2",
-      "topic": "1",
-      "date": "2023-01-30T21:36:32.611Z",
+      "letter": " hello",
+      "recipient": "3",
+      "topic": [
+        "2",
+        "3"
+      ],
+      "date": "2023-01-30T22:23:35.132Z",
       "id": 1
     }
   ],

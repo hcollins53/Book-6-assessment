@@ -16,9 +16,14 @@ export const SavedLetters = (letter) => {
             return recipient.id === parseInt(letter.recipient)
         }
     )
-    const foundTopic = topics.find(
+    let allTopics = ``
+    topics.map(
         (topic) => {
-            return topic.id === parseInt(letter.topic)
+            for(const topicId of letter.topic) {
+                if(topicId.includes(topic.id)) {
+                    return allTopics += `<button class="topic_button">${topic.name}</button>`
+                }
+            }
 
         })
     return `<li class="separateLetters">
@@ -26,9 +31,9 @@ export const SavedLetters = (letter) => {
     <p>${letter.letter}<br></p>
     Love ${foundRecipient.name} (${foundRecipient.email})<br>
     Sent on ${letter.date}<br>
-    <button class="topic">
-    ${foundTopic.name}<br>
-    </button>
+    <div class="allTopics">
+    ${allTopics}
+    </div>
     </li>`
 }
 
