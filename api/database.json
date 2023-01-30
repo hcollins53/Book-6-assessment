@@ -1,0 +1,78 @@
+{
+  "lettersToSend": [
+    {
+      "author": "1",
+      "letter": " Helloo how are you",
+      "recipient": "2",
+      "topic": "1",
+      "date": "2023-01-30T21:36:32.611Z",
+      "id": 1
+    }
+  ],
+  "recipients": [
+    {
+      "id": 1,
+      "name": "Maya Angelou",
+      "email": "maya@maya.com"
+    },
+    {
+      "id": 2,
+      "name": "Mark Twain",
+      "email": "mark@mark.com"
+    },
+    {
+      "id": 3,
+      "name": "Charles Dickson",
+      "email": "charles@charles.com"
+    },
+    {
+      "id": 4,
+      "name": "Agatha Christie",
+      "email": "agatha@agatha.com"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Maya Angelou",
+      "email": "maya@maya.com"
+    },
+    {
+      "id": 2,
+      "name": "Mark Twain",
+      "email": "mark@mark.com"
+    },
+    {
+      "id": 3,
+      "name": "Charles Dickson",
+      "email": "charles@charles.com"
+    },
+    {
+      "id": 4,
+      "name": "Agatha Christie",
+      "email": "agatha@agatha.com"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Business"
+    },
+    {
+      "id": 2,
+      "name": "Friendly"
+    },
+    {
+      "id": 3,
+      "name": "Family"
+    },
+    {
+      "id": 4,
+      "name": "Congratulations"
+    },
+    {
+      "id": 5,
+      "name": "Condolences"
+    }
+  ]
+}
