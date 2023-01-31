@@ -15,18 +15,18 @@ mainContainer.addEventListener("click", clickEvent => {
        let userTopicArray = []
        let checkedTopics = document.querySelectorAll("input[name='topic']:checked")
        checkedTopics.forEach((topic) => {
-        userTopicArray.push(topic.value)
+        userTopicArray.push(parseInt(topic.value))
        })
        
                 
        
         // Make an object out of the user input
         const dataToSendToAPI = {
-            author: userAuthor,
+            author: parseInt(userAuthor),
             letter: userLetter,
-            recipient: userRecipient,
+            recipient: parseInt(userRecipient),
             topic: userTopicArray,
-            date: new Date()
+            date: new Date().toLocaleDateString()
         }
 
         // Send the data to the API for permanent storage

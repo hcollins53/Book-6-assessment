@@ -8,19 +8,20 @@ export const SavedLetters = (letter) => {
 
     const foundAuthor = authors.find(
         (author) => {
-            return author.id === parseInt(letter.author)
+            return author.id === letter.author
         }
     )
     const foundRecipient = recipients.find(
         (recipient) => {
-            return recipient.id === parseInt(letter.recipient)
+            return recipient.id === letter.recipient
         }
     )
     let allTopics = ``
     topics.map(
         (topic) => {
             for(const topicId of letter.topic) {
-                if(topicId.includes(topic.id)) {
+
+                if(topicId === topic.id) {
                     return allTopics += `<button class="topic_button">${topic.name}</button>`
                 }
             }
